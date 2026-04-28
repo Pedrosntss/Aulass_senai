@@ -1,5 +1,9 @@
 def formatar_real(valor):
-    return f"R$ {valor: ,.2f}".replace(",","X").replace(".",",").replace("X",".")
+    texto = f"R$ {valor: ,.2f}" # Padrão EUA: 1,234.56
+    texto = texto.replace(",","X")
+    texto = texto.replace(".",",")
+    texto = texto.replace("X",".")
+    return texto
 #Uso: 
-preco_hospedagem = 49.9
-print(formatar_real(preco_hospedagem)) #R$ 49,90
+preco_hospedagem = 1234.5
+print(formatar_real(preco_hospedagem)) #R$ 1.234,50
