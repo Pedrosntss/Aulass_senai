@@ -1,0 +1,12 @@
+def criar_perfil(nome,idade,cidade):
+    print(f"{nome}, {idade} anos, {cidade}")
+
+criar_perfil(cidade="Curitiba", nome="Julia", idade=25)
+#Julia, 25 anos, Curitiba - funciona independente da ordem!
+
+def somar_tudo(*numeros):
+    return sum(numeros)
+
+print(somar_tudo(1,2))
+print(somar_tudo(1,2,3,4))
+print(somar_tudo(20,30))
